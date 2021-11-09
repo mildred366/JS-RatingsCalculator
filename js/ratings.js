@@ -5,10 +5,10 @@ function collect_ratings() {
         average: 0
     };
     let rating = 0;
-const elements = document.querySelectorAll(".rating");
 
+const elements = document.querySelectorAll(".rating");
 elements.forEach(element => {
-    rating = parseInt(element.id.replace("star", " "));
+    rating = parseInt(element.id.replace("star", ""));
      ratings.count += parseInt(element.value);
      ratings.sum += parseInt(element.value) * rating;
     });  
